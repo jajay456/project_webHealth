@@ -1,0 +1,94 @@
+nav {
+
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+nav a:hover {
+    background-color: rgb(132, 132, 132);
+    border-radius: 10%;
+    
+}
+.Logo{
+    position: static;
+    float: left;
+}
+.signup {
+    position: static;
+    float: right
+
+}
+.signin{
+    position: static;
+    float: right
+}
+.signup:hover {
+    
+    background-color: rgb(210, 253, 181);
+    color: #333;
+    border-radius: 10%;
+    
+}
+.signin:hover {
+    background-color: rgb(132, 132, 132);
+    border-radius: 10%;
+    
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.logout{
+    position: static;
+    float: right
+}
+.logout:hover {
+    background-color: rgb(255, 113, 113);
+    border-radius: 10%;
+    
+}
+.name{
+    position: static;
+    float: right
+}
+
+.name:hover {
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 10%;
+}
+.container-table {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-table table{
+width: 100%;
+border-top: 2px solid #e4e4e4;
+border-bottom: 2px solid #e4e4e4;
+}
+
+table {
+    
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+    
+}
+table, td, th {
+    padding: 10px;
+    border: 1px solid black;
+}

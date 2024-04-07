@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Help Health Me</title>
+    <link href="/css/blog.css" rel = "stylesheet">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto&display=swap');
+        
+        /* Your CSS styles go here */
+        body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  width: 100%;
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+        
+        }
+        .btn-post:hover {
+
+        background-color: rgb(98, 243, 127);
+        color: #ffffff;
+        border-radius: 10%;
+
+    }
+        .form-control{
+            position: relative; 
+            width :100%;
+            background-color: rgb(235, 235, 235);
+            border-radius:10px ;
+            margin: 5px;
+            max-width: 800px;
+            min-width: 800px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Add more styles as needed */
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="" class="Logo">LOGO</a>
+            <a href="/home">BMI</a>
+            <a href="/health_information">Health Information</a>
+            <a href="/community">Community</a>
+            
+            <% if (loggedIn) { %>
+                
+                <a href="/logout" class="logout">Logout</a>
+                <a href=""class="name"><%= UserData.email %>  |</a>
+            <% } %>
+
+            <% if (!loggedIn) { %>
+            <a href="/register"class="signup">Sign Up</a>
+            <a href="/login"class="signin">Sign In</a>
+            <% } %>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="/user/community" method="POST">
+            <div class="form-group">
+                <%= UserData.email %>
+
+                <textarea class="form-control" placeholder=" What are you thinking? " rows="5" "></textarea>
+                
+            </div>
+            <button class="btn-post" type="submit" >POST</button>
+        </form>
+    </div>
+    
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

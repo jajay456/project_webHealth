@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Help Health Me</title>
+    <link href="/css/blog.css" rel = "stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto&display=swap');
+                /* Your CSS styles go here */
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        nav {
+
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .Logo{
+            position: static;
+            float: left;
+        }
+        .Logout{
+            position: static;
+            float: right
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p{
+            font-size: small;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <nav>
+                <a href="" class="Logo">LOGO</a>
+                <a href="/home">BMI</a>
+                <a href="/health_information">Health Information</a>
+                <a href="community">Community</a>
+                
+                <% if (loggedIn) { %>
+                    
+                    <a href="/logout" class="logout">Logout</a>
+                    <a href=""class="name"><%= UserData.email %>  |</a>
+                <% } %>
+    
+                <% if (!loggedIn) { %>
+                <a href="/register"class="signup">Sign Up</a>
+                <a href="/login"class="signin">Sign In</a>
+                <% } %>
+            </nav>
+        </nav>
+    </header>
+    <div class = "img">
+        <img src="https://img.freepik.com/free-photo/woman-drinking-water-after-training_23-2147598806.jpg?t=st=1711460976~exp=1711464576~hmac=5b684b75633097fd4b18d2aa43e8844a5a101e5389b7803d350b67a0d0168d59&w=1480" 
+        style="  position: relative;
+                justify-content: center;
+                display: flex;
+                max-width: 800px;
+                margin: 20px auto;
+                border-radius: 5%;
+                padding: 20px;">
+                </div>
+        <div style="max-width: 1000px;margin: 20px auto;">
+            <h1 >
+                รักษาร่างกายให้ชุ่มชื้นและรักษาสุขภาพให้แข็งแรง: น้ำสนับสนุนภูมิคุ้มกันอย่างไร</h1>
+            <p>Susan Bowerman, M.S., R.D., CSSD, CSOWM, FAND – Sr. Director, Worldwide Nutrition Education and Training
+                
+               | 19 กรกฎาคม 2566
+            </p>
+            <p ">เพื่อให้คุณมีสุขภาพแข็งแรง ระบบภูมิคุ้มกันของคุณต้องอาศัยร่างกายที่มีน้ำเพียงพอ
+            </p>
+            <P>
+                น้ำเป็นเครื่องดื่มที่เป็นธรรมชาติที่สุดในโลก อย่างไรก็ตาม มนุษย์ดื่มน้ำมานานก่อนที่จะดื่มชา เบียร์ หรือไวน์ ดังนั้นแม้ว่าการดื่มน้ำหนึ่งแก้วไม่ควรต้องคิดอีกรอบ แต่นี่เป็นเครื่องเตือนใจว่าเหตุใดเราจึงต้องให้ความสำคัญกับการบริโภคเครื่องดื่มที่เก่าแก่ที่สุดในโลกมากขึ้น            </P>
+            <p>
+                ร่างกายมนุษย์ประกอบด้วยน้ำเกือบ 70 เปอร์เซ็นต์ จึงไม่น่าแปลกใจที่เราจะต้องรักษาร่างกายให้ชุ่มชื้นเพียงพอเพื่อสุขภาพที่ดี คุณต้องดื่มน้ำให้เพียงพอเพื่อให้ร่างกายสามารถย่อยอาหารและส่งสารอาหารไปยังเซลล์ได้อย่างเหมาะสม และกำจัดสารที่ร่างกายไม่ต้องการ            </p>
+            <p>
+                หากไม่มีน้ำเพียงพอ การควบคุมอุณหภูมิของร่างกายอาจเป็นเรื่องท้าทาย ข้อต่อของคุณจะขาดการหล่อลื่น และกล้ามเนื้อก็จะเหนื่อยล้าเร็วขึ้นเช่นกัน สิ่งสำคัญคือ: ทุกเซลล์ เนื้อเยื่อ และอวัยวะต้องการน้ำเพื่อให้ทำงานได้อย่างถูกต้อง            </p>
+            <h3>น้ำและภูมิคุ้มกัน</h3>
+            <p>
+                เช่นเดียวกับระบบอื่นๆ ในร่างกาย เซลล์ในระบบภูมิคุ้มกันของคุณต้องการสารอาหารเพื่อทำหน้าที่ของมัน ต่อไปนี้เป็นสามวิธีหลักที่ทำให้น้ำช่วยสนับสนุนภูมิคุ้มกัน:            </p>
+            <h3>น้ำเป็นสิ่งจำเป็นสำหรับการดูดซึมสารอาหาร</h3>
+            <p>
+                น้ำเป็นสิ่งจำเป็นในระหว่างกระบวนการย่อยอาหารทั้งหมด โดยเฉพาะอย่างยิ่งเมื่อเป็นเรื่องของการดูดซึมสารอาหารเข้าสู่กระแสเลือด เมื่อไปถึงที่นั่น สารอาหารจะถูกขนส่งในสภาพแวดล้อมที่มีน้ำไปยังเซลล์ทั้งหมดของร่างกาย ซึ่งเป็นที่ที่สามารถถูกรับและนำไปใช้ได้            </p>
+
+            <h3>น้ำเป็นองค์ประกอบสำคัญของน้ำเหลือง</h3>
+            <p>
+                น้ำเป็นองค์ประกอบสำคัญของของเหลวสำคัญอีกชนิดหนึ่งในระบบภูมิคุ้มกันของคุณ เรียกว่าน้ำเหลือง (lymph หรือ lymphatic fluid) ซึ่งเดินทางผ่านระบบหลอดเลือดที่แยกจากกัน            </p>
+            <p>
+                น้ำเหลืองประกอบด้วยเซลล์เม็ดเลือดขาวชนิดพิเศษที่เรียกว่าลิมโฟไซต์ที่ช่วยให้ร่างกายต่อสู้กับการติดเชื้อ ในขณะที่น้ำเหลืองไหลเวียน จะช่วยขจัดของเสีย สารพิษ และสิ่งสกปรกออกจากร่างกายของคุณ รวมถึงแบคทีเรียและไวรัส เนื่องจากระบบน้ำเหลืองของคุณประกอบด้วยน้ำประมาณ 96 เปอร์เซ็นต์ จึงสมเหตุสมผลที่ภาวะขาดน้ำอาจทำให้การทำงานของระบบระบายน้ำตามธรรมชาติในร่างกายช้าลง            </p>
+
+            <h3>น้ำช่วยรักษาเยื่อเมือกให้แข็งแรง</h3>
+            <p>
+                อีกวิธีหนึ่งที่น้ำและของเหลวสนับสนุนภูมิคุ้มกันก็คือการรักษาสุขภาพของเยื่อเมือกของคุณ เช่นเดียวกับที่ผิวของคุณช่วยปกป้องภายนอกร่างกายจากการรุกรานจากสิ่งแปลกปลอม เยื่อเมือกที่ชื้นของคุณก็ทำหน้าที่เป็นเกราะป้องกันเช่นกัน เมมเบรนเหล่านี้ช่วยปกป้องพื้นที่ภายในร่างกายที่สัมผัสกับอากาศ เช่น จมูก ปาก และลำคอ เมื่อร่างกายของคุณขาดของเหลวเพียงพอ ช่องจมูกของคุณอาจจะแห้ง ซึ่งจะทำให้สิ่งกีดขวางมีประสิทธิภาพน้อยลง
+            </p>
+
+
+        </div>
+            
+
+
+    
+    <footer>
+        <div class="container">
+            <p>&copy; Heal Health Me . 
+                contact ig: scatterswu</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Help Health Me</title>
+    <link href="/css/blog.css" rel = "stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto&display=swap');
+                /* Your CSS styles go here */
+        body {
+            font-family: 'Prompt', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        nav {
+
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .Logo{
+            position: static;
+            float: left;
+        }
+        .Logout{
+            position: static;
+            float: right
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p{
+            font-size: small;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="" class="Logo">LOGO</a>
+            <a href="/home">BMI</a>
+            <a href="/health_information">Health Information</a>
+            <a href="/community">Community</a>
+            
+            <% if (loggedIn) { %>
+                
+                <a href="/logout" class="logout">Logout</a>
+                <a href=""class="name"><%= UserData.email %>  |</a>
+            <% } %>
+
+            <% if (!loggedIn) { %>
+            <a href="/register"class="signup">Sign Up</a>
+            <a href="/login"class="signin">Sign In</a>
+            <% } %>
+        </nav>
+    </header>
+    <div class = "img">
+        <img src="https://img.freepik.com/free-photo/green-tea-latte-with-milk-white-cup-with-green-leaves-wooden-spoon_181624-673.jpg?t=st=1711460837~exp=1711464437~hmac=91080fdbaaf3271a4d59bf4af52ed98b391aa6ac38564d5b753bdb4bb1a05631&w=740" 
+        style="  position: relative;
+                justify-content: center;
+                display: flex;
+                max-height: 600px;
+                margin: 20px auto;
+                border-radius: 5%;
+                padding: 20px;">
+                </div>
+        <div style="max-width: 1000px;margin: 20px auto;">
+            <h1 >
+                เชค Matcha and Red Bean</h1>
+            <p>Herbalife
+               | 19 กรกฎาคม 2566
+            </p>
+            <p>
+                มุ่งเน้นไปที่เป้าหมายของคุณพร้อมเพลิดเพลินกับรสชาติสไตล์ญี่ปุ่นสุดคลาสสิก ถั่วแดงหวานและมัทฉะแสนอร่อยผสมผสานกันในเชคโปรตีนนี้เพื่อเสริมคุณค่าทางโภชนาการ
+            </p>
+            <h3 >ข้อมูลทางโภชนาการ</h3>
+            <ul><li>พลังงาน: 265 กิโลแคลอรี&nbsp;</li><li>โปรตีน: 23 กรัม</li><li>คาร์โบไฮเดรต: 31.5 กรัม&nbsp;</li><li>ไขมัน: 5.5 กรัม&nbsp;</li><li>ใยอาหาร: 5 กรัม<br>
+                &nbsp;</li></ul>
+                <div class="cmp-text-header">
+                    <h3>ส่วนผสม</h3>
+                </div>
+                    <div class="cmp-text-header__body h1-cmp-theme-color__primary"><ul><li>2 ช้อน - นิวทริชั่นแนล โปรตีน ดริ้งค์ มิกซ์ กลิ่นวานิลลา&nbsp;</li><li>1 ช้อน - เพอร์ซันนัลไลซ์ โปรตีน พาวเดอร์&nbsp;</li><li>250 มล. - นมถั่วเหลือง&nbsp;</li><li>1 ช้อนโต๊ะ - ถั่วแดงญี่ปุ่น&nbsp;</li><li>1 ช้อนโต๊ะ - ผงมัทฉะ&nbsp;</li><li>น้ำแข็ง 3-5 ก้อน<br>
+                &nbsp;</li></ul>
+                </div>
+                  <div class="cmp-text-header">
+                    <h3>วิธีทำ</h3>
+                </div>
+                    <div class="cmp-text-header__body h1-cmp-theme-color__primary"><ul><li>เทน้ำลงในเครื่องปั่น จากนั้นใส่ส่วนผสมทั้งหมดลงไป&nbsp;</li><li>ปั่นให้เข้ากันประมาณ 30 วินาที&nbsp;</li><li>เทใส่แก้วแล้วเพลิดเพลินกับรสชาติได้เลย</li></ul>
+                </div>
+                  </div>
+    </div>
+            
+
+
+    
+    <footer>
+        <div class="container">
+            <p>&copy; Heal Health Me . 
+                contact ig: scatterswu</p>
+        </div>
+    </footer>
+</body>
+</html>
